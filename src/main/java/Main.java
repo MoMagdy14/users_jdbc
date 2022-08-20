@@ -5,6 +5,7 @@ import Service.UserService.Impl.UserServiceImpl;
 import entity.User;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.Optional;
 
@@ -15,8 +16,8 @@ public class Main {
         System.out.println(con);
         UserServiceImpl userService = UserServiceImpl.getInstance();
 
-        /*Date date = Date.valueOf("1999-12-01");
-        User user = new User(1,"eva", "123", date, "010");
+      /*  Date date = Date.valueOf("1999-12-01");
+        User user = new User(1,"eva1", "123", date, "010");
         userService.addUser(user);*/
 
         /*  Date date = Date.valueOf("1999-12-01");
@@ -32,12 +33,12 @@ public class Main {
             System.out.println(user);
         }*/
 
-        Optional<User> user= userService.getUserByPhone("011");
+       /* Optional<User> user= userService.getUserByPhone("011");
         if (user.isPresent()) {
             System.out.println(user);
         } else {
             System.out.println("No user found!");
-        }
+        }*/
 
 
 
